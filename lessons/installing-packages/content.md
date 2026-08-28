@@ -54,6 +54,7 @@ M-x package-install RET sokoban RET
 ```
 M-x sokoban
 ```
+<img src="../../screenshots/sokoban.png">
 
 با کلیدهای جهت‌دار (arrow keys) جعبه‌ها رو هل بده و توی جای مشخص‌شده (معمولاً با رنگ متفاوت) قرارشون بده. هر مرحله که تموم بشه، مرحله‌ی بعدی شروع می‌شه.
 

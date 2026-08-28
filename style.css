@@ -86,7 +86,7 @@ body {
 }
 
 a {
-    color: inherit;
+    color: inherit;   
 }
 
 ::selection {
@@ -226,9 +226,6 @@ a {
     letter-spacing: 0.04em;
 }
 
-/* modeline-style flanking dashes, echoing Emacs's status bar */
-.home footer::before { content: "── "; }
-.home footer::after  { content: " ──"; }
 
 /* ─────────────────────────
    APP
@@ -248,7 +245,6 @@ a {
 .sidebar {
     position: sticky;
     top: 0;
-
     height: 100vh;
 
     padding: 30px 22px;
@@ -584,6 +580,20 @@ pre code {
 
     direction: ltr;
     unicode-bidi: isolate;
+}
+
+/* ________________________
+   images
+------------------------- */
+
+img {
+    max-width: 100%;
+    height: auto;
+
+    border-radius: 20px;
+
+    display: block;
+    margin: 20px auto;
 }
 
 /* ─────────────────────────

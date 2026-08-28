@@ -63,7 +63,7 @@ const lessons = [
                 slug: "customizing-environment"
             },
             {
-                title: "آماده سازی برای python",
+                title: "آماده سازی برای پایتون",
                 slug: "config-for-python"
             }
         ]
