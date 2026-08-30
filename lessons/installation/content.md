@@ -46,7 +46,7 @@ Emacs روی سیستم‌عامل‌های مختلف اجرا می‌شود و
 برای Windows هم می‌توانید Emacs را از صفحه‌ی رسمی GNU
 دانلود و نصب کنید:
 
-https://www.gnu.org/software/emacs/download.html
+<a href="https://www.gnu.org/software/emacs/download.html"> صفحه رسمی </a>
 
 <span style="color:#7F5AB6">
 البته بعد از اینکه GNU به شما احساس ناکافی بودن داد
