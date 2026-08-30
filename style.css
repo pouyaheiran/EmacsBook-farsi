@@ -12,8 +12,8 @@
     --color-text-muted: #77767b;
 
 
-    --color-accent: #9141ac;
-    --color-accent-hover: #813d9c;
+    --color-accent: #7d57b2;
+    --color-accent-hover: #713d9c;
     --color-accent-soft: rgba(145, 65, 172, 0.1);
 
 
@@ -51,9 +51,9 @@ html.dark {
     --color-text-muted: #9a9996;
 
     /* Purple accent, lightened for dark mode */
-    --color-accent: #c061cb;
-    --color-accent-hover: #d68adf;
-    --color-accent-soft: rgba(192, 97, 203, 0.16);
+    --color-accent: #a157fb;
+    --color-accent-hover: #ac57f2;
+    --color-accent-soft: rgba(140, 97, 203, 0.10);
 
     /* Borders */
     --color-border: rgba(255, 255, 255, 0.09);
