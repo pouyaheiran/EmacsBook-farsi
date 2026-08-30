@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <url>
+        <loc>https://pouyaheiran.github.io/EmacsBook-farsi/</loc>
+    </url>
+
+    <url>
+        <loc>https://pouyaheiran.github.io/EmacsBook-farsi/lessons/what-is-emacs/</loc>
+    </url>
+
+    <url>
+        <loc>https://pouyaheiran.github.io/EmacsBook-farsi/lessons/fundamentals/</loc>
+    </url>
+
+    <url>
+        <loc>https://pouyaheiran.github.io/EmacsBook-farsi/lessons/installation/</loc>
+    </url>
+
+    <url>
+        <loc>https://pouyaheiran.github.io/EmacsBook-farsi/lessons/installing-packages/</loc>
+    </url>
+
+    <url>
+        <loc>https://pouyaheiran.github.io/EmacsBook-farsi/lessons/buffers/</loc>
+    </url>
+
+    <url>
+        <loc>https://pouyaheiran.github.io/EmacsBook-farsi/lessons/files/</loc>
+    </url>
+
+    <url>
+        <loc>https://pouyaheiran.github.io/EmacsBook-farsi/lessons/editing-in-emacs/</loc>
+    </url>
+
+    <url>
+        <loc>https://pouyaheiran.github.io/EmacsBook-farsi/lessons/advanced-editing/</loc>
+    </url>
+
+    <url>
+        <loc>https://pouyaheiran.github.io/EmacsBook-farsi/lessons/customizing-environment/</loc>
+    </url>
+
+    <url>
+        <loc>https://pouyaheiran.github.io/EmacsBook-farsi/lessons/config-for-python/</loc>
+    </url>
+
+    <url>
+        <loc>https://pouyaheiran.github.io/EmacsBook-farsi/lessons/windows/</loc>
+    </url>
+
+</urlset>
