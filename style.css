@@ -1,75 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Vazirmatn:wght@400;500;600;700&display=swap');
- 
+
 :root {
 
-    --color-bg: #fbfaf0;
-    --color-surface: #f3ecdc;
-    --color-surface-hover: #e5dcc6;
+    --color-bg: #fafafa;
+    --color-surface: #f8f7f5;
+    --color-surface-hover: #f2f2f2;
 
 
-    --color-text: #302a24;
-    --color-text-secondary: #40382f;
-    --color-text-muted: #655b4f;
+    --color-text: #1e1e1e;
+    --color-text-secondary: #2e2e2e;
+    --color-text-muted: #77767b;
 
 
-    --color-accent: #7441b5;
-    --color-accent-hover: #62339b;
-    --color-accent-soft: rgba(116, 65, 181, 0.13);
+    --color-accent: #9141ac;
+    --color-accent-hover: #813d9c;
+    --color-accent-soft: rgba(145, 65, 172, 0.1);
 
 
-    --color-border: #b9aa87;
-    --color-border-dark: #8f805f;
+    --color-border: rgba(0, 0, 0, 0.09);
+    --color-border-dark: rgba(0, 0, 0, 0.14);
 
 
-    --bevel-light: rgba(255, 255, 248, 0.72);
+    --bevel-light: rgba(255, 255, 255, 0);
 
 
-    --radius-sm: 30px;
-    --radius-md: 30px;
-    --radius-button:999px;
+    --radius-sm: 12px;
+    --radius-md: 12px;
+    --radius-button: 9999px;
 
     --shadow-raised:
-        inset 0 1px 0 var(--bevel-light),
-        0 1px 2px rgba(58, 46, 24, 0.22);
+        0 1px 2px rgba(0, 0, 0, 0.06),
+        0 1px 6px rgba(0, 0, 0, 0.05);
 
     
     --shadow-sunken:
-        inset 0 1px 2px rgba(58, 46, 24, 0.25),
-        inset 0 -1px 0 rgba(255, 252, 240, 0.55);
+        inset 0 0 0 1px rgba(0, 0, 0, 0.06);
 
     --ease: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 html.dark {
-    /* Dark warm surfaces */
-    --color-bg: #12110f;
-    --color-surface: #1c1a17;
-    --color-surface-hover: #292621;
+    /* Adwaita dark surfaces */
+    --color-bg: #1e1e1e;
+    --color-surface: #2e2e2e;
+    --color-surface-hover: #383838;
 
     /* Readable text */
-    --color-text: #f2eee7;
-    --color-text-secondary: #d8d2c8;
-    --color-text-muted: #aaa39a;
+    --color-text: #ffffff;
+    --color-text-secondary: #e3e3e3;
+    --color-text-muted: #9a9996;
 
-    /* Purple accent */
-    --color-accent: #a86be8;
-    --color-accent-hover: #c18af5;
-    --color-accent-soft: rgba(168, 107, 232, 0.14);
+    /* Purple accent, lightened for dark mode */
+    --color-accent: #c061cb;
+    --color-accent-hover: #d68adf;
+    --color-accent-soft: rgba(192, 97, 203, 0.16);
 
     /* Borders */
-    --color-border: #39352f;
-    --color-border-dark: #0d0c0a;
+    --color-border: rgba(255, 255, 255, 0.09);
+    --color-border-dark: rgba(255, 255, 255, 0.14);
 
-    /* Very subtle bevel */
-    --bevel-light: rgba(255, 255, 255, 0.045);
+    /* No bevel in flat dark mode */
+    --bevel-light: rgba(255, 255, 255, 0);
 
     --shadow-raised:
-        inset 0 1px 0 var(--bevel-light),
-        0 2px 4px rgba(0, 0, 0, 0.45);
+        0 1px 2px rgba(0, 0, 0, 0.3),
+        0 1px 6px rgba(0, 0, 0, 0.24);
 
     --shadow-sunken:
-        inset 0 2px 4px rgba(0, 0, 0, 0.45),
-        inset 0 -1px 0 rgba(255, 255, 255, 0.025);
+        inset 0 0 0 1px rgba(255, 255, 255, 0.07);
 }
 * {
     box-sizing: border-box;
@@ -82,8 +80,8 @@ html {
 body {
     margin: 0;
 
-    /* Flat panel, one soft top-lit gradient — no grain, no diagonal fibers */
-    background: linear-gradient(to bottom, var(--color-surface) 0%, var(--color-bg) 220px, var(--color-bg) 100%);
+    /* Flat, single-tone surface — no gradient wash */
+    background: var(--color-bg);
     background-attachment: fixed;
 
     color: var(--color-text);
@@ -171,8 +169,9 @@ a {
     font-size: clamp(64px, 10vw, 120px);
     line-height: 0.9;
 
-    letter-spacing: -0.07em;
+    letter-spacing: -0.04em;
     color: var(--color-text-secondary);
+    font-weight: 700;
 }
 
 .home-hero h1 span {
@@ -201,15 +200,15 @@ a {
     align-items: center;
     gap: 30px;
 
-    /* Clearlooks-style button: two-stop gradient, one crisp top highlight, one bottom edge */
-    background: linear-gradient(to bottom, color-mix(in srgb, var(--color-accent) 75%, white) 0%, var(--color-accent) 100%);
+    /* Flat Adwaita "suggested-action" pill button */
+    background: var(--color-accent);
     color: #fff;
 
     text-decoration: none;
 
     font-weight: 600;
 
-    border: 1px solid var(--color-accent-hover);
+    border: none;
     box-shadow: var(--shadow-raised);
 
     transition:
@@ -219,7 +218,7 @@ a {
 
 .next-button:hover {
     transform: translateX(-4px);
-    background: linear-gradient(to bottom, color-mix(in srgb, var(--color-accent-hover) 75%, white) 0%, var(--color-accent-hover) 100%);
+    background: var(--color-accent-hover);
 }
 
 .next-button:active {
@@ -323,7 +322,7 @@ a {
     background: var(--color-accent-soft);
     color: var(--color-accent);
     font-weight: 500;
-    box-shadow: var(--shadow-sunken);
+    box-shadow: none;
 }
 
 /* ─────────────────────────
@@ -375,8 +374,9 @@ a {
     font-size: clamp(48px, 7vw, 80px);
     line-height: 1;
 
-    letter-spacing: -0.05em;
+    letter-spacing: -0.03em;
     color: var(--color-text-secondary);
+    font-weight: 700;
 }
 
 .lesson-content .lead {
@@ -400,7 +400,7 @@ a {
     margin-bottom: 20px;
 
     font-size: 28px;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.02em;
 }
 
 .lesson-content p {
@@ -420,22 +420,18 @@ a {
     border-top: 1px solid var(--color-border);
 }
 .nav-button {
-    padding: 13px 20px;
+    padding: 12px 18px;
 
     color: var(--color-text);
 
     text-decoration: none;
 
     border: 1px solid var(--color-border);
-    border-radius: var(--radius-button);
+    border-radius: 10px;
 
-    /* Skeuomorphic raised button — no top highlight */
-    background: linear-gradient(
-        to bottom,
-        var(--color-surface) 0%,
-        var(--color-surface-hover) 100%
-    );
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.10);
+    /* Flat Adwaita list/button surface */
+    background: var(--color-surface);
+    box-shadow: none;
 
     font-size: 14px;
     font-weight: 500;
@@ -445,49 +441,36 @@ a {
     gap: 10px;
 
     transition:
-        transform 150ms var(--ease),
         background 150ms var(--ease),
         border-color 150ms var(--ease),
         box-shadow 150ms var(--ease);
 }
 
 .nav-button:hover {
-    transform: translateY(-4px);
-    border-color: var(--color-accent);
-    box-shadow: 0 7px 12px rgba(0, 0, 0, 0.12);
+    background: var(--color-surface-hover);
+    border-color: var(--color-border-dark);
 }
 
 .nav-button:active {
-    transform: translateY(0);
     background: var(--color-surface-hover);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.10);
+    box-shadow: var(--shadow-sunken);
 }
 
 .nav-button.primary {
     color: white;
 
-    background: linear-gradient(
-        to bottom,
-        color-mix(in srgb, var(--color-accent) 75%, white) 0%,
-        var(--color-accent) 100%
-    );
-    border-color: var(--color-accent-hover);
+    background: var(--color-accent);
+    border-color: var(--color-accent);
 }
 
 .nav-button.primary:hover {
-    transform: translateY(-4px);
-    background: linear-gradient(
-        to bottom,
-        color-mix(in srgb, var(--color-accent-hover) 75%, white) 0%,
-        var(--color-accent-hover) 100%
-    );
-    box-shadow: 0 7px 12px rgba(0, 0, 0, 0.12);
+    background: var(--color-accent-hover);
+    border-color: var(--color-accent-hover);
 }
 
 .nav-button.primary:active {
-    transform: translateY(0);
     background: var(--color-accent-hover);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.10);
+    box-shadow: var(--shadow-sunken);
 }
 /* ─────────────────────────
    THEME TOGGLE
@@ -505,7 +488,7 @@ a {
     border-radius: 50%;
 
 
-    background: radial-gradient(circle at 35% 30%, var(--bevel-light) 0%, var(--color-surface) 50%, var(--color-surface-hover) 100%);
+    background: var(--color-surface);
     color: var(--color-text);
 
     cursor: pointer;
@@ -523,13 +506,7 @@ a {
 }
 
 #theme-toggle:hover {
-    transform: translateY(-5px) rotate(-4deg) scale(1.05);
-    background: radial-gradient(
-        circle at 35% 30%,
-        var(--bevel-light) 0%,
-        var(--color-surface-hover) 50%,
-        var(--color-surface-hover) 100%
-    );
+    background: var(--color-surface-hover);
 }
 
 #theme-toggle:active {
@@ -550,11 +527,11 @@ table {
     background: var(--color-surface);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-sm);
-    box-shadow: var(--shadow-sunken);
+    box-shadow: none;
     overflow: hidden;
 }
 thead {
-    border-bottom: 1px solid var(--color-accent);
+    border-bottom: 1px solid var(--color-border);
 }
 
 th,
@@ -593,8 +570,8 @@ code {
     color: var(--color-accent);
     background: var(--color-accent-soft);
 
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-sm);
+    border: none;
+    border-radius: 6px;
 
     direction: ltr;
     unicode-bidi: isolate;
@@ -610,7 +587,7 @@ pre {
 
     border: 1px solid var(--color-border);
     border-radius: var(--radius-md);
-    box-shadow: var(--shadow-sunken);
+    box-shadow: none;
 
     overflow-x: auto;
 
@@ -643,8 +620,8 @@ img {
     height: auto;
 
     border-radius: var(--radius-md);
-    border: 4px solid var(--color-surface);
-    box-shadow: 0 1px 3px rgba(58, 46, 24, 0.3);
+    border: 1px solid var(--color-border);
+    box-shadow: none;
 
     display: block;
     margin: 20px auto;
