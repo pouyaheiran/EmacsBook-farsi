@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pouyaheiran.github.io/EmacsBook-farsi/sitemap.xml
